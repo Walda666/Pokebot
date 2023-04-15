@@ -1,0 +1,2 @@
+# Pokebot
+Bot discord Pokemon
