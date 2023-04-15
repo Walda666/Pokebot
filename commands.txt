@@ -1,0 +1,171 @@
+# Commandes 
+EXEMPLE =>
+
+client.application.commands.create({
+    name: "add-item",
+    description: "Ajouter des objets à un joueur",
+    options: [
+        {
+            type: 6,
+            name: "player",
+            description: "Jouer à modifier",
+            required: true
+        },
+        {
+            type: 3,
+            name: "item",
+            description: "Objet concerné",
+            required: true,
+            choices: [
+                {
+                    name: "Pierre d'invocation basique",
+                    value: "invoc_1"
+                },
+                {
+                    name: "Pierre d'invocation avancée",
+                    value: "invoc_2"
+                },
+            ]
+        },
+        {
+            type: 4,
+            name: "quantity",
+            description: "Quantité à ajouter",
+            required: true
+        }
+    ]
+})
+
+
+
+client.application.commands.create({
+    name: "spawn",
+    description: "Faire apparaître un Pokemon"
+})
+
+client.application.commands.create({
+    name: "shop",
+    description: "Affiche le contenu de la boutique du lieu"
+})
+
+client.application.commands.create({
+    name: "buy",
+    description: "Acheter un objet dans une boutique",
+    options: [
+        {
+            type: 4,
+            name: "objet",
+            description: "identifiant de l'objet voulu",
+            required: true
+        },
+        {
+            type: 4,
+            name: "quantite",
+            description: "Quantité de l'objet voulue",
+            required: true,
+        }
+    ]
+})
+
+client.application.commands.create({
+    name: "sell",
+    description: "Vendre un objet"
+})
+
+client.application.commands.create({
+    name: "aller",
+    description: "Se déplacer entre les lieux"
+})
+
+client.application.commands.create({
+    name: "log",
+    description: "Enregistrer un lieu"
+})
+
+client.application.commands.create({
+    name: "lier",
+    description: "Relier deux lieux entre eux",
+    options: [
+        {
+            type: 7,
+            name: "lieu",
+            description: "channel à relier",
+            required: true
+        }
+    ]
+})
+
+client.application.commands.create({
+    name: "soigner",
+    description: "Faire soigner ses Pokémons dans un centre"
+})
+
+client.application.commands.create({
+    name: "equipe",
+    description: "Affiche son équipe",
+    options: [
+        {
+            type: 3,
+            name: "action",
+            description: "Ne pas mettre pour avoir la vue d'ensemble",
+            required: false,
+            choices: [
+                {
+                    name: "voir",
+                    value: "voir"
+                },
+                {
+                    name: "echanger la position",
+                    value: "ordre"
+                }
+            ]
+        },
+        {
+            type: 4,
+            name: "position",
+            description: "Pokémon à voir/changer de position",
+            required: false
+        }
+    ]
+})
+
+client.application.commands.create({
+    name: "inventaire",
+    description: "Affiche l'inventaire"
+})
+
+client.application.commands.create({
+    name: "profil",
+    description: "Affiche le profil joueur"
+})
+
+client.application.commands.create({
+    name: "dresseurs",
+    description: "Interragit avec les dresseurs présents",
+    options: [
+        {
+            type: 3,
+            name: "action",
+            description: "Ne pas mettre pour avoir la liste des dresseurs",
+            required: false,
+            choices: [
+                {
+                    name: "fight",
+                    value: "fight"
+                }
+            ]
+        },
+        {
+            type: 4,
+            name: "dresseur",
+            description: "Dresseur à combattre",
+            required: false
+        }
+    ]
+})
+
+
+client.application.commands.create({
+    name: "arene",
+    description: "Interragit avec l'arène du lieu"
+})

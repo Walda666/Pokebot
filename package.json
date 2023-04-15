@@ -1,0 +1,25 @@
+{
+  "name": "pokebot",
+  "version": "1.0.0",
+  "description": "Bot discord permettant une modération classique (mute, ban, kick, warn) avec des logs pour chaque actions, enregistrés dans une base de données.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Walda666/Pokebot.git"
+  },
+  "author": "Walda",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Walda666/Pokebot/issues"
+  },
+  "homepage": "https://github.com/Walda666/Pokebot#readme",
+  "dependencies": {
+    "discord.js": "^13.6.0",
+    "dotenv": "^16.0.3",
+    "enmap": "^5.9.5",
+    "sync-sql": "^1.0.2"
+  }
+}
